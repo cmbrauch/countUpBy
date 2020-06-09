@@ -1,26 +1,18 @@
-
-// 5. this is code receive and display user info from text fields:
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    const person1Input = $("input#person1").val();
-    const person2Input = $("input#person2").val();
-    const animalInput= $("input#animal").val();
-    const exclamationInput = $("input#exclamation").val();
-    const verbInput = $("input#verb").val();
-    const nounInput = $("input#noun").val();
+    const array = [10,20,30,40,50,60,70];
+    let fiveArray = []; 
+    for (let index = 0; index <= 5; index += 1) {
+      fiveArray.push(array[index] * 5);
+    }
+   console.log(fiveArray);
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
 
-    $("#story").show();
 
     event.preventDefault();
   });
 });
+
 
 
      
